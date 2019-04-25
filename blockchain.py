@@ -28,11 +28,11 @@ class Block:
         return h.hexdigest()
 
     def __str__(self):
-        return "Block Hash: " + str(self.hash()) + \
-            "\nBlock #: " + str(self.block_number) + \
-            "\nBlock Data: " + str(self.data) + \
+        return "Hash: " + str(self.hash()) + \
+            "\n#: " + str(self.block_number) + \
+            "\nData: " + str(self.data) + \
             "\nHashes: " + str(self.nonce) + \
-            "\n--------------------------------------------"
+            "\n-----"
 
 class Blockchain:
     max_nonce = 2**32
